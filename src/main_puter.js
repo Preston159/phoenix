@@ -60,7 +60,7 @@ window.main_shell = async () => {
     }
     const source_without_trailing_slash =
         (config.source && config.source.replace(/\/$/, ''))
-        || 'https://api.puter.com';
+        || 'http://localhost:5259';
     await puterSDK.setAPIOrigin(source_without_trailing_slash);
 
     const ptt = new XDocumentPTT();
